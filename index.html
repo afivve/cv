@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mochammad Nur 'Afifudin — Fullstack Developer</title>
+  <meta name="description"
+    content="CV Mochammad Nur 'Afifudin, Fullstack Developer berpengalaman membangun sistem enterprise, platform pemerintahan, dan otomasi berbasis AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #fbfaf8;
+      --ink: #1c2321;
+      --ink-soft: #4a534f;
+      --rule: #d8d4cb;
+      --accent: #3d5a4c;
+      --accent-soft: #eef1ee;
+      --tag-bg: #f1efe8;
+      --max-w: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'IBM Plex Sans', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    /* ---- header ---- */
+    header.hero {
+      margin-bottom: 44px;
+    }
+
+    .status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--rule);
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin-bottom: 22px;
+    }
+
+    .status-tag::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      margin: 0 0 20px;
+    }
+
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 0;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    .contact-line a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .sep {
+      margin: 0 10px;
+      color: var(--rule);
+    }
+
+    /* ---- section framework ---- */
+    section {
+      margin-bottom: 40px;
+    }
+
+    .section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .section-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .summary p {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    /* ---- experience ---- */
+    .job {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .job:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 2px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      font-size: 1.02rem;
+    }
+
+    .job-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    .job-company {
+      color: var(--ink-soft);
+      font-size: .92rem;
+      margin-bottom: 12px;
+    }
+
+    .subjob {
+      margin-top: 16px;
+    }
+
+    .subjob-title {
+      font-weight: 600;
+      font-size: .95rem;
+      margin-bottom: 2px;
+    }
+
+    .subjob-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+    }
+
+    ul.bullets {
+      margin: 0 0 10px;
+      padding-left: 18px;
+    }
+
+    ul.bullets li {
+      margin-bottom: 6px;
+      color: var(--ink-soft);
+      font-size: .95rem;
+    }
+
+    .stack-line {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--accent);
+      margin-top: 6px;
+    }
+
+    .stack-line b {
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    /* ---- education ---- */
+    .edu-item {
+      margin-bottom: 22px;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    .edu-school {
+      font-weight: 600;
+      font-size: .98rem;
+    }
+
+    .edu-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    .edu-program {
+      color: var(--ink-soft);
+      font-size: .9rem;
+      margin: 2px 0 8px;
+    }
+
+    /* ---- skills ---- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 10px 18px;
+    }
+
+    .skill-cat {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--accent);
+      padding-top: 2px;
+    }
+
+    .skill-vals {
+      font-size: .92rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---- certifications ---- */
+    ul.certs {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    ul.certs li {
+      margin-bottom: 8px;
+      font-size: .92rem;
+      color: var(--ink-soft);
+    }
+
+    ul.certs li b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-soft);
+      text-align: center;
+    }
+
+    /* ---- print ---- */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .status-tag {
+        display: none;
+      }
+
+      .wrap {
+        padding: 0 8px;
+        max-width: 100%;
+      }
+
+      footer {
+        display: none;
+      }
+    }
+
+    @media (max-width:520px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .wrap {
+        padding: 40px 18px 72px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2px 0;
+      }
+
+      .skill-cat {
+        padding-top: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+
+      header.hero,
+      section {
+        animation: rise .5s ease both;
+      }
+
+      section:nth-of-type(1) {
+        animation-delay: .05s;
+      }
+
+      section:nth-of-type(2) {
+        animation-delay: .1s;
+      }
+
+      section:nth-of-type(3) {
+        animation-delay: .15s;
+      }
+
+      section:nth-of-type(4) {
+        animation-delay: .2s;
+      }
+
+      section:nth-of-type(5) {
+        animation-delay: .25s;
+      }
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="hero">
+      <h1>Mochammad Nur 'Afifudin</h1>
+      <p class="role">Fullstack Developer — Enterprise Systems, Government Platforms &amp; AI Automation</p>
+      <div class="contact-line">
+        <span>Banjarnegara, Jawa Tengah, Indonesia</span>
+        <span class="sep">/</span>
+        <a href="https://wa.me/6289603941891" target="_blank" rel="noopener noreferrer">
+          +6289 603 941 891
+        </a>
+        <span class="sep">/</span>
+        <a href="mailto:afivve@gmail.com">afivve@gmail.com</a>
+        <span class="sep">/</span>
+        <a href="https://linkedin.com/in/afivve/" target="_blank" rel="noopener">linkedin.com/in/afivve</a>
+      </div>
+    </header>
+
+    <section class="summary">
+      <div class="section-label">Summary</div>
+      <p>Fullstack Developer with experience building web applications, including enterprise systems, government
+        platforms, and AI-powered automation tools. Experienced in designing scalable REST APIs, workflow-based systems,
+        and fullstack architectures using Node.js, TypeScript, Express.js, and Next.js. Strong in system design,
+        database architecture (SQL), authentication/authorization, and production deployment on VPS environments.</p>
+    </section>
+
+    <section class="experience">
+      <div class="section-label">Experience</div>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Remote Fullstack Developer (Contract)</span>
+          <span class="job-date">Mar 2025 – Jun 2026</span>
+        </div>
+        <div class="job-company">Tekko.id Bali</div>
+
+        <div class="subjob">
+          <div class="subjob-title">Dalung Smart Village</div>
+          <ul class="bullets">
+            <li>Developed a full-stack Smart Village platform for Bali local government, digitizing village operations
+              including budget management (APBDes), citizen data (Dasawisma/PKK), and public complaint systems.</li>
+            <li>Built end-to-end APBDes financial system covering budgeting (RAB/RKA/DPA), realisation tracking,
+              multilevel approval workflow, and automated document generation (PDF) using Puppeteer.</li>
+            <li>Built citizen management system (Dasawisma) with external API integration for population data
+              synchronization, demographic analytics, and reporting dashboards.</li>
+            <li>Developed public complaint platform with hierarchical categories, real-time status tracking, WhatsApp
+              notification integration (Wablas API), and community interaction features.</li>
+          </ul>
+          <div class="stack-line"><b>Stack:</b> Next.js, Express.js, Sequelize ORM, MySQL</div>
+        </div>
+
+        <div class="subjob">
+          <div class="subjob-title">Customer Service Chatbot</div>
+          <ul class="bullets">
+            <li>Designed and developed a stateful AI-powered chatbot for booking management, customer service
+              automation, and appointment scheduling via WhatsApp.</li>
+            <li>Built a modular conversation architecture consisting of intent classification, session management, flow
+              routing, and stateful workflow handlers to support multi-step interactions.</li>
+            <li>Implemented booking lifecycle features including availability checking, scheduling, rescheduling, and
+              cancellation with real-time conflict detection.</li>
+            <li>Implemented payment integration using Xendit for automated booking confirmation and transaction
+              processing.</li>
+          </ul>
+          <div class="stack-line"><b>Stack:</b> TypeScript, Node.js, Next.js, Gemini API, WhatsApp API, MySQL, Prisma
+            ORM, Xendit API</div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Remote Freelance Project-Based Developer</span>
+          <span class="job-date"></span>
+        </div>
+        <div class="job-company">Eka Group Wonosobo</div>
+
+        <div class="subjob">
+          <div class="subjob-title">E-Journal (Accounting &amp; Financial Management System)</div>
+          <div class="subjob-date">Nov 2025 – Feb 2026</div>
+          <ul class="bullets">
+            <li>Developed a full-stack accounting and financial reporting system supporting general journals, chart of
+              accounts, and double-entry bookkeeping.</li>
+            <li>Built financial reporting modules including Balance Sheet, Income Statement, Trial Balance, General
+              Ledger, and Cash Flow reports.</li>
+            <li>Implemented recurring transaction management, multi-entity organization support, and role-based access
+              control (RBAC).</li>
+            <li>Deployed and maintained production application on Ubuntu VPS, including process management (PM2), Nginx
+              reverse proxy configuration, and database setup.</li>
+          </ul>
+          <div class="stack-line"><b>Stack:</b> Next.js, Express.js, TypeScript, Sequelize ORM, MySQL, PM2, Nginx</div>
+        </div>
+
+        <div class="subjob">
+          <div class="subjob-title">Task Management System</div>
+          <div class="subjob-date">Sep 2024</div>
+          <ul class="bullets">
+            <li>Developed and maintained a task management application supporting real-time collaboration and
+              notifications.</li>
+            <li>Developed push notification features using Firebase Cloud Messaging (FCM) and real-time updates using
+              WebSocket.</li>
+            <li>Improved database maintainability through schema refactoring, relationship design, and migration
+              implementation.</li>
+          </ul>
+          <div class="stack-line"><b>Stack:</b> FastAPI, Svelte, Docker, Nginx, MariaDB, MySQL, WebSocket, Firebase
+            Cloud Messaging</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="section-label">Education</div>
+
+      <div class="edu-item">
+        <div class="edu-head">
+          <span class="edu-school">Bangkit Academy 2023 Batch 1 — led by Google, GoTo &amp; Traveloka (Kampus
+            Merdeka)</span>
+          <span class="edu-date">Feb 2023 – Jul 2023</span>
+        </div>
+        <div class="edu-program">Cloud Computing Learning Path</div>
+        <ul class="bullets">
+          <li>Contributed to the development of StuntCare, a stunting detection and monitoring platform.</li>
+          <li>Designed and deployed cloud infrastructure and backend services on Google Cloud Platform.</li>
+        </ul>
+        <div class="stack-line"><b>Stack:</b> Google Cloud Platform, Node.js, Express.js, Docker, Flask API, MySQL</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-head">
+          <span class="edu-school">Binar Academy — Studi Independen Kampus Merdeka</span>
+          <span class="edu-date">Aug 2023 – Dec 2023</span>
+        </div>
+        <div class="edu-program">Backend JavaScript</div>
+        <ul class="bullets">
+          <li>Completed an intensive backend engineering program focused on RESTful API development and system design.
+          </li>
+          <li>Led a team in developing a MOOC platform as the final project.</li>
+        </ul>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-head">
+          <span class="edu-school">Universitas Sains Al-Qur'an Wonosobo</span>
+          <span class="edu-date">Sep 2020 – Aug 2024</span>
+        </div>
+        <div class="edu-program">Informatics Engineering — GPA 3.71 / 4.00</div>
+        <ul class="bullets">
+          <li>Developed a web-based plant disease detection system using Convolutional Neural Networks (CNN) for image
+            classification.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="section-label">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-cat">Frontend</div>
+        <div class="skill-vals">React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS</div>
+
+        <div class="skill-cat">Backend</div>
+        <div class="skill-vals">Node.js, Express.js, NestJS, FastAPI, REST API</div>
+
+        <div class="skill-cat">Database</div>
+        <div class="skill-vals">MySQL, MariaDB, Prisma, Sequelize</div>
+
+        <div class="skill-cat">DevOps &amp; Infra</div>
+        <div class="skill-vals">Docker, Nginx, PM2, CI/CD, Linux VPS</div>
+
+        <div class="skill-cat">AI &amp; Integrations</div>
+        <div class="skill-vals">Gemini API, WhatsApp API, Xendit, WebSocket, FCM</div>
+
+        <div class="skill-cat">Tools</div>
+        <div class="skill-vals">Git, GitLab, System Design, API Integration</div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <div class="section-label">Certifications</div>
+      <ul class="certs">
+        <li><b>Bangkit Academy Certificate of Completion</b> — Bangkit Academy led by Google, GoTo &amp; Traveloka</li>
+        <li><b>Menjadi Google Cloud Engineer</b> — Dicoding</li>
+        <li><b>Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud</b> — Dicoding</li>
+        <li><b>Google Cloud Computing Foundations: Infrastructure in Google Cloud</b> — Google Cloud Skillboost</li>
+        <li><b>Back End JavaScript Wave 5</b> — Binar Academy</li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated July 2026
+    </footer>
+
+  </div>
+</body>
+
+</html>
